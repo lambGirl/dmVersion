@@ -1,0 +1,32 @@
+{
+  "name": "dmversion",
+  "version": "1.0.0",
+  "description": "Use the node gadget to modify the package version and the version number under the script file",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node ./index.js"
+  },
+  "bin": {
+    "dmversion": "./index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lambGirl/dmVersion.git"
+  },
+  "keywords": [
+    "version"
+  ],
+  "author": "lamia",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lambGirl/dmVersion/issues"
+  },
+  "homepage": "https://github.com/lambGirl/dmVersion#readme",
+  "devDependencies": {
+    "inquirer": "^7.2.0"
+  },
+  "dependencies": {
+    "chalk": "^4.1.0"
+  }
+}
