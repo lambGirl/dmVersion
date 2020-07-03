@@ -1,6 +1,6 @@
 {
   "name": "dmversion",
-  "version": "2015.0.0",
+  "version": "1.1.1",
   "description": "Use the node gadget to modify the package version and the version number under the script file",
   "main": "index.js",
   "scripts": {

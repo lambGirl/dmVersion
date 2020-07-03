@@ -12,8 +12,10 @@ const inquirer = require('inquirer');
 
 const { spawn } = require('child_process');
 
-const  pkgPath = './package.json';
-const jenkisTagPath = './scripts/build.pro';
+// 地址配置
+const dmversionConfig = require('../.dmversion.json');
+const  pkgPath = path.join(dmversionConfig.pkgPath);
+const jenkisTagPath = path.join(dmversionConfig.jenkisTagPath);
 
 const run  = async () => {
     // 发起验证
