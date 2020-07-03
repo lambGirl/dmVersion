@@ -94,7 +94,9 @@ const run  = async () => {
 
         try {
             const jenkisTagFile = fs.readFileSync(jenkisTagPath).toString();
-            fs.writeFileSync(jenkisTagPath, jenkisTagFile.replace(/^VERSION=?([^.* ]*)?/, `VERSION=${answers.version}`));
+            console.log('jenkisTagFile', jenkisTagFile);
+            fs.writeFileSync(jenkisTagPath, jenkisTagFile.replace(/VERSION=(.*)\n{0,1}/, `VERSION=${answers.version}\n`));
+            
             console.log(chalk.green(`修改成功： ${path.join(jenkisTagPath)}`));
 
             // 修改版本后提交add
